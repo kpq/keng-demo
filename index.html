@@ -27,6 +27,9 @@
 
 var company = getTeamIdFromHash();
 
+d3.select(".hash-name").text(company);
+
+
 d3.tsv("data/" + company + ".tsv", function (err, data) {
 
 	if (err) throw "Error loading in company";
